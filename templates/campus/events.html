@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Events</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+            background-color: #f4f6f9;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .events-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .event-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+        .event-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .event-info {
+            padding: 15px;
+        }
+        .event-info h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #222;
+        }
+        .event-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>College Events</h1>
+
+    <div class="events-container">
+        <div class="event-card">
+            <img src="{% static 'images/events/1.jpg' %}" alt="Tech Fest">
+            <div class="event-info">
+                <h3>Tech Fest 2024</h3>
+                <p><strong>Date:</strong> March 20, 2024</p>
+                <p>A day of coding competitions, robotics demos, and tech talks.</p>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="{% static 'images/events/2.jpg' %}" alt="Cultural Night">
+            <div class="event-info">
+                <h3>Cultural Night</h3>
+                <p><strong>Date:</strong> April 10, 2024</p>
+                <p>Music, dance, drama, and traditional performances by students.</p>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="{% static 'images/events/3.jpg' %}" alt="Sports Meet">
+            <div class="event-info">
+                <h3>Annual Sports Meet</h3>
+                <p><strong>Date:</strong> January 25, 2024</p>
+                <p>Exciting track and field events, football, and cricket matches.</p>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="{% static 'images/events/4.jpg' %}" alt="Hackathon">
+            <div class="event-info">
+                <h3>36-Hour Hackathon</h3>
+                <p><strong>Date:</strong> February 15–16, 2024</p>
+                <p>Collaborate, innovate, and solve real-world problems through code.</p>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="{% static 'images/events/5.jpg' %}" alt="Blood Donation Drive">
+            <div class="event-info">
+                <h3>Blood Donation Drive</h3>
+                <p><strong>Date:</strong> March 5, 2024</p>
+                <p>Organized in association with Red Cross for a noble cause.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

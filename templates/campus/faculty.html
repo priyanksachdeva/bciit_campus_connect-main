@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Members</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f5;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .faculty-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+        }
+        .faculty-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .faculty-card h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+        .faculty-card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Esteemed Faculty</h1>
+    <div class="faculty-grid">
+        <div class="faculty-card">
+            <img src="{% static 'images/faculty/1.jpg' %}" alt="Dr. A.P. Sharma">
+            <h3>Mr. Alok Mishra</h3>
+            <p><strong>Professor</strong></p>
+            <p>Computer Science</p>
+            <p>Email: 	alok@bciit.ac.in</p>
+        </div>
+        <div class="faculty-card">
+            <img src="{% static 'images/faculty/2.jpg' %}" alt="Dr. Meena Gupta">
+            <h3>Mr Akshit Thakur</h3>
+            <p><strong>Asst. Professor</strong></p>
+            <p>Computer Science</p>
+            <p>Email: akshit@gmail.com</p>
+        </div>
+        <div class="faculty-card">
+            <img src="{% static 'images/faculty/3.jpg' %}" alt="Dr. Rahul Verma">
+            <h3>Dr.Gomathy M</h3>
+            <p><strong>Assistant Professor</strong></p>
+            <p>Computer Science</p>
+            <p>Email: gomathy@bciit.ac.in</p>
+        </div>
+        <div class="faculty-card">
+            <img src="{% static 'images/faculty/4.jpg' %}" alt="Prof. Sneha Rathi">
+            <h3>Ms. Sanjana Gulia</h3>
+            <p><strong>Asst. Professor</strong></p>
+            <p>English Literature</p>
+            <p>Email: sanjna@bciit.ac.in</p>
+        </div>
+        <div class="faculty-card">
+            <img src="{% static 'images/faculty/5.jpg' %}" alt="Dr. Kunal Joshi">
+            <h3>Dr. Harsh Arora</h3>
+            <p><strong>Professor</strong></p>
+            <p>Data Structures, Machine Learning</p>
+            <p>Email: harsh@bciit.ac.in</p>
+        </div>
+        <div class="faculty-card">
+            <img src="{% static 'images/faculty/6.jpg' %}" alt="Dr. Ritu Malik">
+            <h3>Mr. Meetender</h3>
+            <p><strong>Asstt. Professor</strong></p>
+            <p>Computer Science</p>
+            <p>Email: metender@bciit.ac.in</p>
+        </div>
+        <div class="faculty-card">
+            <img src="{% static 'images/faculty/7.jpg' %}" alt="Prof. Nitin Das">
+            <h3>Ms Kritika</h3>
+            <p><strong>Asstt. Professor</strong></p>
+            <p>Computer Science</p>
+            <p>Email: 	kritika@bciit.ac.in</p>
+        </div>
+        <div class="faculty-card">
+            <img src="{% static 'images/faculty/8.jpg' %}" alt="Dr. Varsha Thakur">
+            <h3>Mr. Sandeep Jain</h3>
+            <p><strong>Professor</strong></p>
+            <p>Computer Science</p>
+            <p>Email: 	sandeepkumarbansal@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>

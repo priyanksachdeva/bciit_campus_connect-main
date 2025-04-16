@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Montserrat";
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+#nav img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+#nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 30px;
+    background-color: #2a598f;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: auto;
+}
+
+#nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#nav li:hover {
+    background-color: #f2f4f5fd;
+}
+
+#nav li {
+    margin-left: 25px;
+    position: relative;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+#page1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 20px;
+    text-align: center;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#page1 h1 {
+    font-size: 80px;
+    font-weight: 800;
+    position: relative;
+}
+
+#page1 h2 {
+    font-size: 30px;
+    font-weight: 650;
+}
+
+#page1 h1::before {
+    content: "WELCOME TO BCIIT CAMPUS CONNECT";
+    position: absolute;
+    color: rgb(77, 133, 170);
+    top: -9px;
+    left: -9px;
+    z-index: -1;
+}
+
+.about {
+    background-color: rgba(255, 255, 255, 0.514);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    padding: 40px;
+    margin: 60px auto;
+    max-width: 1200px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2,
+p {
+    color: #000000;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.vision-mission-section {
+    color: #333;
+}
+
+.vision-box,
+.mission-box {
+    background-color: rgba(255, 255, 255, 0.514);
+    border-left: 5px solid #007bff;
+    transition: transform 0.3s ease;
+}
+
+.vision-box:hover,
+.mission-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #007bff;
+}
+
